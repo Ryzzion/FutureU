@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FutureU</div>
+        <nav>
+            <button id="menu-toggle">☰</button> <!-- Menu toggle button -->
+            <ul id="menu" class="hidden">
+                <!-- Add the `onclick` attribute to call the `showPage()` function -->
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('register')">Register</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page active">
+            <h1>Welcome to The FutureU</h1>
+            <p>Empowering Your Future with Innovative Learning</p>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="page">
+            <h1>About Us</h1>
+            <p>Explore our commitment to providing cutting-edge educational programs that empower your future.</p>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="page">
+            <h1>Register</h1>
+            <p>Join us today to receive updates and exclusive offers!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us on:</p>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background-color: #001f3f; /* Navy Blue */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul.hidden {
+    display: none; /* Hidden menu for small screens */
+}
+
+header nav ul li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.page {
+    display: none; /* Hidden by default */
+}
+
+.page.active {
+    display: block; /* Only active page is visible */
+}
+
+form input, form button {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+}
+
+/* Responsive Design for Android */
+@media screen and (max-width: 768px) {
+    header nav button {
+        display: block; /* Show menu button on small screens */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    header nav ul.hidden {
+        display: none; /* Keep hidden menu toggle working */
+    }
+
+    header nav ul li {
+        border: none;
+    }
+}
